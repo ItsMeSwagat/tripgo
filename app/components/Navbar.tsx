@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className=" bg-white sticky top-0 px-[10rem]">
+    <header className=" z-10 bg-white sticky top-0 px-[10rem]">
       <nav className=" w-full h-[8vh] grid grid-flow-col justify-between items-center">
         <div>
           <Image src="/logo black.png" alt="logo" width={145} height={30} />

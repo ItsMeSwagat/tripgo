@@ -3,9 +3,9 @@ import { SlideNextArrow, SlidePrevArrow } from "./SliderNextArrow";
 
 const PopularDestination = () => {
   return (
-    <section className=" min-w-full min-h-screen bg-bg3 pl-[8rem] py-[5rem]">
+    <section className=" min-w-full h-full bg-bg3 pl-[8rem] py-[8rem]">
         {/* header */}
-      <div className=" text-white pb-10 pr-[8rem]">
+      <div className=" text-white pb-10">
         <h2 className=" text-5xl font-semibold">Popular Destinations</h2>
         <p className=" text-lg font-thin">An enim nullam tempor gravida donec enim congue magna at pretium.</p>
       </div>
