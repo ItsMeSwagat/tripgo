@@ -12,7 +12,7 @@ const mainSlider = () => {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -21,7 +21,15 @@ const mainSlider = () => {
     prevArrow: <SlidePrevArrow />,
     responsive: [
       {
-        breakpoint: 1439,
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1280,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,

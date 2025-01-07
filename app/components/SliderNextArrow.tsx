@@ -7,7 +7,7 @@ export function SlideNextArrow(props: any) {
   return (
     <div onClick={onClick}>
       <Image
-        className=" hidden md:block absolute -top-24 right-[10rem] border-2 p-1 border-light rounded-full"
+        className=" hidden md:block absolute -top-28 right-[6rem] xl:right-[10rem] border-2 p-1 border-light rounded-full"
         src={angleright}
         alt="angle right"
         width={35}
@@ -22,7 +22,7 @@ export function SlidePrevArrow(props: any) {
   return (
     <div onClick={onClick}>
       <Image
-        className=" hidden md:block absolute -top-24 right-[12.5rem] border-2 p-1 border-light rounded-full"
+        className=" hidden md:block absolute -top-28 right-[8.5rem] xl:right-[12.5rem] border-2 p-1 border-light rounded-full"
         src={angleleft}
         alt="angle left"
         width={35}
