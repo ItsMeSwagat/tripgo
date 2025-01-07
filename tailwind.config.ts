@@ -7,6 +7,13 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "767px",
+      lg: "1023px",
+      xl: "1279px",
+      dxl: "1439px",
+    },
     extend: {
       colors: {
         primary: {
@@ -33,8 +40,8 @@ export default {
         yellow: "#008DD0",
       },
       fontFamily: {
-        "hk-grotesk": ["var(--font-grotesk)"]
-      }
+        "hk-grotesk": ["var(--font-grotesk)"],
+      },
     },
   },
   plugins: [],

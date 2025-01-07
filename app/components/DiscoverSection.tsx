@@ -3,10 +3,10 @@ import check from "../assets/icons/check.svg";
 
 const DiscoverSection = () => {
   return (
-    <section className=" w-full h-[95vh] bg-[url('/Maskgroup.png')] flex justify-center items-center px-[10rem]">
+    <section className=" w-full h-full bg-[url('/Maskgroup.png')] flex justify-center items-center xl:py-[8rem] home_section">
       {/* <img src="/Maskgroup.png" alt="bgimg" className=" block w-full h-full object-cover" /> */}
 
-      <div className=" w-full flex justify-between items-center">
+      <div className=" w-full flex flex-col lg:flex-row justify-between items-center">
         <div className=" flex flex-col gap-6">
           <span className=" text-secondary">Take A Tour</span>
           <h1 className=" text-5xl font-semibold">
@@ -44,7 +44,7 @@ const DiscoverSection = () => {
           <img
             src="/Bgimg.png"
             alt=""
-            className=" -mr-[10rem] mt-[10rem] block w-[22rem] h-[30rem] rounded-[10px] object-cover"
+            className=" z-10 -mr-[10rem] mt-[10rem] block w-[22rem] h-[30rem] rounded-[10px] object-cover"
           />
           <img
             src="/Bgimg.png"

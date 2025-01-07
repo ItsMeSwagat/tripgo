@@ -7,19 +7,17 @@ import search from "../assets/icons/search-r.svg";
 
 const HeroSection = () => {
   return (
-    <section className=" w-full h-[90vh] bg-bg2 bg-[url('/Bgimg.png')] object-cover px-[10rem]">
+    <section className=" w-full h-[92vh] bg-bg2 bg-[url('/Bgimg.png')] home_section">
       <div className=" flex flex-col gap-5 justify-center items-center h-full">
-        <div className=" grid gap-5 text-center">
-          <h1 className=" text-7xl font-bold">
-            Your Journey Starts Here
-          </h1>
-          <p className=" text-text">
+        <div className=" grid text-center">
+          <h1 className=" heading ">Your Journey Starts Here</h1>
+          <p className=" text-white">
             Discover amazing places at exclusive deals.
           </p>
         </div>
 
         {/* search section */}
-        <div className=" w-full grid grid-flow-col gap-14 bg-white p-4 mt-10 rounded-[5px] shadow-[10px_2px_40px_0px_#00000024]">
+        <div className=" w-full sm:w-[50%] lg:w-full grid lg:grid-flow-col lg:grid-cols-5 gap-10 bg-white p-4 lg:mt-10 rounded-[5px] shadow-[10px_2px_40px_0px_#00000024]">
           <div className=" grid">
             <div className=" flex gap-1">
               <Image
@@ -29,7 +27,7 @@ const HeroSection = () => {
                 height={20}
                 className=""
               />
-              <span>Destination</span>
+              <p className=" text-text">Destination</p>
             </div>
             <input
               type="text"
@@ -41,7 +39,7 @@ const HeroSection = () => {
           <div className=" grid">
             <div className=" flex gap-1">
               <Image src={plane} alt="" width={20} height={20} className="" />
-              <span>Activity</span>
+              <p className=" text-text">Activity</p>
             </div>
             <input
               type="text"
@@ -59,7 +57,7 @@ const HeroSection = () => {
                 height={20}
                 className=""
               />
-              <span>Dates</span>
+              <p className=" text-text">Dates</p>
             </div>
             <input
               type="text"
@@ -71,7 +69,7 @@ const HeroSection = () => {
           <div className=" grid items-center">
             <div className=" flex gap-1">
               <Image src={user} alt="" width={20} height={20} className="" />
-              <span>Guest</span>
+              <p className=" text-text">Guest</p>
             </div>
             <input
               type="number"
@@ -81,7 +79,10 @@ const HeroSection = () => {
             />
           </div>
 
-          <button type="submit" className=" bg-primary rounded-[5px] flex text-white items-center justify-center hover:bg-primary-hover">
+          <button
+            type="submit"
+            className=" bg-primary rounded-[5px] py-1.5 flex text-white items-center justify-center hover:bg-primary-hover"
+          >
             <Image src={search} alt="" width={25} height={25} className="" />
             Search
           </button>
