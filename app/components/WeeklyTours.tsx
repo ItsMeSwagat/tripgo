@@ -18,6 +18,12 @@ const WeeklyTours = () => {
       <center className=" xl:hidden">
         <ProductSlider />
       </center>
+
+      <center className=" mt-5">
+        <button className=" justify-center items-center btn-outline ">
+          Get Started
+        </button>
+      </center>
     </section>
   );
 };

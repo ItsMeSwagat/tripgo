@@ -17,7 +17,7 @@ const MultiRowSlider = <T,>({ data, renderCard }: SliderProps<T>) => {
     autoplay: true,
     centerMode: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     speed: 500,
     rows: 2,
     slidesPerRow: 1,
