@@ -5,7 +5,7 @@ import clock from "../assets/icons/clock.svg";
 
 const Description = () => {
   return (
-    <section className=" home_section w-full h-full bg-primary grid gap-10 py-[4rem] lg:grid-flow-col justify-center lg:justify-between items-center text-white">
+    <section className=" home_section w-full h-full bg-primary grid gap-10 py-[4rem] md:grid-flow-col justify-center lg:justify-between items-center text-white">
       <div className=" flex gap-2">
         <Image src={flig} alt="" width={50} height={50} />
         <div>

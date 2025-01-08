@@ -3,9 +3,7 @@
 import React from "react";
 import SingleRowSlider from "./Slider";
 import { popularDestinationData } from "@/utils/constants";
-import PopularDestinationCard, {
-  Props as PopularCardProps,
-} from "./PopularDestinationCard";
+import PopularDestinationCard from "./PopularDestinationCard";
 
 const PopularDestinationSlider = () => {
   return (

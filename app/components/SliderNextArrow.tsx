@@ -31,3 +31,33 @@ export function SlidePrevArrow(props: any) {
     </div>
   );
 }
+
+export function NextArrow(props: any) {
+  const { onClick } = props;
+  return (
+    <div onClick={onClick}>
+      <Image
+        className=" hidden md:block absolute -top-28 right-[6rem] xl:right-[0rem] border-2 p-1 border-light rounded-full"
+        src={angleright}
+        alt="angle right"
+        width={35}
+        height={35}
+      />
+    </div>
+  );
+}
+
+export function PrevArrow(props: any) {
+  const { onClick } = props;
+  return (
+    <div onClick={onClick}>
+      <Image
+        className=" hidden md:block absolute -top-28 right-[2.5rem] border-2 p-1 border-light rounded-full"
+        src={angleleft}
+        alt="angle left"
+        width={35}
+        height={35}
+      />
+    </div>
+  );
+}
