@@ -1,4 +1,5 @@
-import Slider from "./Slider";
+
+import PopularDestinationSlider from "./PopularDestinationSlider";
 import { SlideNextArrow, SlidePrevArrow } from "./SliderNextArrow";
 
 const PopularDestination = () => {
@@ -12,11 +13,11 @@ const PopularDestination = () => {
 
         {/* slider */}
       <center className=" lg:hidden">
-        <Slider />
+        <PopularDestinationSlider />
       </center>
 
       <div className="hidden lg:block">
-        <Slider />
+        <PopularDestinationSlider />
       </div>
     </section>
   );

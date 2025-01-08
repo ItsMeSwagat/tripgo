@@ -1,15 +1,19 @@
 "use client";
 
-import { images } from "@/utils/constants";
+import React from "react";
 import Slider from "react-slick";
+import { SlideNextArrow, SlidePrevArrow } from "./SliderNextArrow";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import PopularDestinationCard from "./PopularDestinationCard";
-import { SlideNextArrow, SlidePrevArrow } from "./SliderNextArrow";
 
-const mainSlider = () => {
-  var settings = {
+interface SliderProps<T> {
+  data: T[];
+  renderCard: (item: T, index: number) => React.ReactNode;
+}
+
+const MainSlider = <T,>({ data, renderCard }: SliderProps<T>) => {
+  const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -61,18 +65,14 @@ const mainSlider = () => {
       },
     ],
   };
+
   return (
     <Slider {...settings}>
-      {images.map((img, i) => (
-        <PopularDestinationCard
-          key={img.id}
-          img={img.src}
-          tours={img.tours}
-          continent={img.continent}
-        />
+      {data.map((item, index) => (
+        <div key={index}>{renderCard(item, index)}</div>
       ))}
     </Slider>
   );
 };
 
-export default mainSlider;
+export default MainSlider;
