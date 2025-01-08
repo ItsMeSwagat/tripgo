@@ -11,9 +11,13 @@ const WeeklyTours = () => {
         </span>
       </div>
 
-      <div className=" w-full h-full">
+      <div className=" w-full h-full hidden xl:block">
         <ProductSlider />
       </div>
+
+      <center className=" xl:hidden">
+        <ProductSlider />
+      </center>
     </section>
   );
 };

@@ -128,4 +128,22 @@ export const productData = [
     price: 190.99,
     discountedPrice: 139.15,
   },
+  {
+    id: 11,
+    img: "/Bgimg.png",
+    name: "Venice, Rome and Milan – 9 Days 8 Nights",
+    daysleft: 3,
+    location: "Bryce Canyon National Park, USA",
+    price: 190.99,
+    discountedPrice: 139.15,
+  },
+  {
+    id: 12,
+    img: "/Bgimg.png",
+    name: "Venice, Rome and Milan – 9 Days 8 Nights",
+    daysleft: 3,
+    location: "Bryce Canyon National Park, USA",
+    price: 190.99,
+    discountedPrice: 139.15,
+  },
 ];

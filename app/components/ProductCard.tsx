@@ -28,7 +28,7 @@ const ProductCard = ({
   return (
     <div
       key={id}
-      className=" w-[20rem] h-[25rem] rounded-[10px] overflow-hidden shadow-[0px_4px_40px_0px_#2B59FF14]"
+      className=" w-[20rem] h-[25rem] rounded-[10px] overflow-hidden shadow-[0px_4px_40px_0px_#2B59FF14] mb-5"
     >
       {/* card image */}
       <div className=" relative h-1/2">

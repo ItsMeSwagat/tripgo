@@ -81,7 +81,7 @@ const HeroSection = () => {
 
           <button
             type="submit"
-            className=" bg-primary rounded-[5px] py-1.5 flex text-white items-center justify-center hover:bg-primary-hover"
+            className="btn flex text-white items-center justify-center"
           >
             <Image src={search} alt="" width={25} height={25} className="" />
             Search

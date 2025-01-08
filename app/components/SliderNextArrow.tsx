@@ -37,7 +37,7 @@ export function NextArrow(props: any) {
   return (
     <div onClick={onClick}>
       <Image
-        className=" hidden md:block absolute -top-28 right-[6rem] xl:right-[0rem] border-2 p-1 border-light rounded-full"
+        className=" hidden md:block absolute -top-28 right-0 border-2 p-1 border-light rounded-full"
         src={angleright}
         alt="angle right"
         width={35}
