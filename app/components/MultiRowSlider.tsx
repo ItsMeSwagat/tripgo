@@ -20,34 +20,27 @@ const MultiRowSlider = <T,>({ data, renderCard }: SliderProps<T>) => {
     slidesToShow: 3,
     speed: 500,
     rows: 2,
-    slidesPerRow: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          row: 1,
-          slidesPerRow: 2,
+          slidesToShow: 2,
           centerMode: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          row: 1,
-          slidesPerRow: 2,
+          slidesToShow: 2,
           centerMode: false,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 580,
         settings: {
           slidesToShow: 1,
-          row: 1,
-          slidesPerRow: 1,
           centerMode: false,
         },
       },
