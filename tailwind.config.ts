@@ -12,7 +12,8 @@ export default {
       md: "767px",
       lg: "1023px",
       xl: "1279px",
-      dxl: "1439px",
+      dxl: "1440px",
+      ddxl: "1600px",
     },
     extend: {
       colors: {

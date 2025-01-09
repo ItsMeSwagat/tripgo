@@ -18,7 +18,7 @@
   }
 
   .home_section {
-    @apply px-[1rem] sm:px-[3rem] lg:px-[5rem] xl:px-[10rem];
+    @apply px-[1rem] sm:px-[3rem] lg:px-[5rem] xl:px-[10rem] ddxl:px-[20rem];
   }
 
   .heading {
