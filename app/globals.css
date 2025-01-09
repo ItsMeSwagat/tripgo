@@ -26,7 +26,7 @@
   }
 
   .subheading {
-    @apply text-[28px] lg:text-[48px]  font-semibold leading-[54px];
+    @apply text-[28px] lg:text-[32px] xl:text-[48px]  font-semibold leading-[54px];
   }
 
   p {
@@ -38,7 +38,7 @@
   }
 
   .btn {
-    @apply bg-primary hover:bg-primary-hover px-6 py-2 rounded-[5px] text-white font-medium;
+    @apply bg-primary hover:bg-primary-hover px-6 py-2 rounded-[5px] text-white text-sm lg:text-base font-medium;
   }
 
   .btn-outline {
