@@ -14,7 +14,6 @@ interface SliderProps<T> {
 
 const MainSlider = <T,>({ data, renderCard}: SliderProps<T>) => {
   const settings = {
-    centerMode:true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,

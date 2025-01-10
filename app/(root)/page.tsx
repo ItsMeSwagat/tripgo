@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Newsletter from "../components/Newsletter";
 import PopularDestination from "../components/PopularDestination";
 import PopularTorus from "../components/PopularTorus";
+import SocialComp from "../components/SocialComp";
 import WeeklyTours from "../components/WeeklyTours";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <WeeklyTours />
       <Newsletter />
       <PopularTorus />
+      <SocialComp />
     </>
   );
 }
