@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const HKGrotesk = localFont({
   src: [
@@ -53,6 +55,17 @@ const HKGrotesk = localFont({
   variable: "--font-grotesk",
 });
 
+const LaBella = localFont({
+  src: [
+    {
+      path: "./fonts/LaBelleAurore-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-labella",
+});
+
 export const metadata: Metadata = {
   title: "Trip Turbo",
   description: "Get your Trip Better",
@@ -65,7 +78,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={HKGrotesk.variable}>{children}</body>
+      <body
+        className={`${HKGrotesk.variable} ${LaBella.variable}`}
+        style={{ fontFamily: "var(--font-grotesk)" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
