@@ -1,7 +1,7 @@
 import React from "react";
 import reliableIcon from "../../assets/icons/Reliable.svg";
 import experiencedIcon from "../../assets/icons/Experienced.svg";
-import fligicon from '../../assets/icons/flig.svg'
+import fligicon from "../../assets/icons/flig.svg";
 import bg from "@/public/Bgimg.png";
 import Image from "next/image";
 
@@ -9,12 +9,12 @@ type Props = {};
 
 export default function TravelGuideline({}: Props) {
   return (
-    <div className="travelguideline home_section w-full h-[90vh] grid grid-flow-col justify-between items-center">
+    <section className="travelguideline home_section w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center py-[5rem] xl:py-[10rem] gap-10 lg:gap-0">
       {/* content */}
-      <div className="">
+      <div className=" w-full lg:w-2/3 grid justify-center items-center lg:justify-start ">
         <p className=" font-la-bella text-secondary">Welcome To Our Store</p>
-        <div className=" flex gap-10">
-          <div className=" w-[25rem] grid gap-3">
+        <div className=" flex flex-col xl:flex-row justify-center items-center lg:justify-start lg:items-start xl:justify-end xl:items-end gap-10">
+          <div className=" w-full lg:w-[25rem] grid gap-3">
             <h1 className="subheading">Discover Our Travel Guideline</h1>
             <span className=" text-text">
               An enim nullam tempor gravida donec enim congue magna at pretium
@@ -27,7 +27,7 @@ export default function TravelGuideline({}: Props) {
             </span>
           </div>
 
-          <div className=" w-80 flex flex-col justify-end items-end">
+          <div className=" w-80 h-full flex flex-col justify-end items-end">
             <div className=" flex gap-2">
               <Image src={reliableIcon} alt="icon" width={50} height={50} />
               <div>
@@ -41,7 +41,13 @@ export default function TravelGuideline({}: Props) {
             </div>
 
             <div className=" flex gap-2">
-              <Image src={experiencedIcon} alt="icon" width={50} height={50} className="" />
+              <Image
+                src={experiencedIcon}
+                alt="icon"
+                width={50}
+                height={50}
+                className=""
+              />
               <div>
                 <p className=" font-medium text-black">
                   Reliable & Fully Insured
@@ -56,7 +62,7 @@ export default function TravelGuideline({}: Props) {
       </div>
 
       {/* image */}
-      <div className=" relative block w-[15rem] h-[20rem] xl:w-[25rem] xl:h-[35rem]">
+      <div className=" relative block w-[18rem] h-[25rem] xl:w-[20rem] xl:h-[30rem] dxl:w-[25rem] dxl:h-[35rem]">
         <Image
           src={bg}
           alt="bg"
@@ -68,6 +74,6 @@ export default function TravelGuideline({}: Props) {
           <span className=" font-normal">Different Parts</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

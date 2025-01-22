@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Section2 = () => {
   return (
-    <section className=" home_section w-full h-[90vh] py-[5rem] grid gap-10">
-      <div className=" text-center grid">
+    <section className=" home_section w-full h-full py-[5rem] grid gap-10">
+      <div className=" text-center grid gap-4">
         <p className=" font-la-bella text-secondary">
           3 Steps For The Perfect Trip
         </p>
@@ -19,7 +19,7 @@ const Section2 = () => {
         </span>
       </div>
 
-      <div className=" w-full flex justify-between gap-10">
+      <div className=" w-full flex flex-col lg:flex-row justify-between gap-10">
         <div className=" w-full flex flex-col p-10 items-center justify-center text-center box-shadow rounded-[10px] gap-4 ">
           <Image src={group3} alt="group1" />
           <p className=" text-accent">Tell us what you want to do</p>

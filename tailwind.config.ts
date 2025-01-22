@@ -12,7 +12,7 @@ export default {
       md: "767px",
       lg: "1023px",
       xl: "1279px",
-      dxl: "1440px",
+      dxl: "1441px",
       ddxl: "1600px",
     },
     extend: {

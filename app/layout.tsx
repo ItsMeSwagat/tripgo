@@ -82,7 +82,9 @@ export default function RootLayout({
         className={`${HKGrotesk.variable} ${LaBella.variable}`}
         style={{ fontFamily: "var(--font-grotesk)" }}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
