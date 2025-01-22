@@ -42,6 +42,7 @@ export default {
       },
       fontFamily: {
         "hk-grotesk": ["var(--font-grotesk)"],
+        "la-bella": ["var(--font-labella)"],
       },
     },
   },
