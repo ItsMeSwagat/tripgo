@@ -22,6 +22,9 @@
     @apply px-[1rem] sm:px-[3rem] lg:px-[5rem] xl:px-[10rem] ddxl:px-[18rem];
   }
 
+  .faq_section {
+    @apply mx-[1rem] sm:mx-[3rem] lg:mx-[5rem] xl:mx-[10rem] ddxl:mx-[18rem] rounded-[10px] mb-[5rem];
+  }
   .heading {
     @apply text-[48px] lg:text-[62px] text-white font-bold leading-[70px];
   }
@@ -47,6 +50,10 @@
   }
   .box-shadow {
     @apply shadow-[0px_4px_40px_0px_#2B59FF14];
+  }
+  .drop_box {
+    @apply shadow-[0px 4px 40px 0px #2B59FF14;
+    ]
   }
 }
 
