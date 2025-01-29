@@ -11,7 +11,7 @@ type Props = {};
 export default function page({}: Props) {
   return (
     <>
-      <Heading />
+      <Heading header="About Us" />
       <TravelGuideline />
       <Section2 />
       <SocialComp />

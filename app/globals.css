@@ -33,6 +33,30 @@
     @apply text-[28px] lg:text-[32px] xl:text-[48px]  font-semibold leading-[54px];
   }
 
+  h1{
+    @apply text-[60px] font-bold leading-[66px]
+  }
+
+  h2{
+    @apply text-[42px] leading-[54px] font-bold
+  }
+
+  h3{
+    @apply text-[32px] leading-[36px] font-bold
+  }
+
+  h4{
+    @apply text-[24px] leading-[28px] font-bold
+  }
+
+  h5{
+    @apply text-[20px] leading-[26px] font-bold
+  }
+
+  h6{
+    @apply text-[16px] leading-[20px] font-bold
+  }
+
   p {
     @apply text-[16px] lg:text-[20px] text-white font-medium leading-[26px];
   }
