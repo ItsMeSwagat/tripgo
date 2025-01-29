@@ -1,12 +1,14 @@
 import React from "react";
 import Breadcrumb from "./Breadcrumb";
 
-type Props = {};
+type Props = {
+  header: string
+};
 
-export default function Heading({}: Props) {
+export default function Heading({header}: Props) {
   return (
     <div className=" w-full h-80 bg-[url('/imagebackground.png')] bg-cover flex flex-col justify-center items-center">
-      <h1 className=" heading">About Us</h1>
+      <h1 className=" heading">{header}</h1>
       <Breadcrumb
         homeElement="Home"
         separator={<span className=""> {">"} </span>}
