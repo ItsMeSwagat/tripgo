@@ -15,9 +15,16 @@ type Props = {
 
 export default function AccordianItem({ open, toggle, title, answer }: Props) {
   return (
-    <div className={`${open ? " border border-border rounded-[10px]" : ""} p-2 lg:p-4 cursor-pointer`}>
-      <div className=" flex items-center gap-3" onClick={toggle}>
-        <div>
+    <div
+      className={`${
+        open ? " border border-border rounded-[10px]" : ""
+      } p-2 lg:p-4 cursor-pointer`}
+    >
+      <div
+        className=" flex items-center gap-3  transition-all duration-500"
+        onClick={toggle}
+      >
+        <div className="">
           {open ? (
             <Image src={minus} alt="minus" />
           ) : (
@@ -27,8 +34,21 @@ export default function AccordianItem({ open, toggle, title, answer }: Props) {
         <span className=" font-medium text-black">{title}</span>
       </div>
 
-      <Collapse isOpened={open}>
-        <div className=" p-4">
+      <Collapse
+        isOpened={open}
+        theme={{
+          collapse: `transition-all duration-500 ease-in-out`,
+          content: `overflow-hidden transition-all duration-500 ease-in-out`,
+        }}
+      >
+        <div
+          className={`p-4 ${
+            open ? "opacity-100" : " opacity-0"
+          } transition-all duration-500 ease-in-out`}
+          style={{
+            transitionDelay: open ? "0.5s" : "0.2s", 
+          }}
+        >
           <span className=" text-text">{answer}</span>
         </div>
       </Collapse>
